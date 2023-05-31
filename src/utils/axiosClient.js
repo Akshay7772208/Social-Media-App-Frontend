@@ -10,7 +10,7 @@ import {setLoading} from '../redux/slices/appConfigSlice'
 export const axiosClient=axios.create({
 	//baseURL: 'http://localhost:4000',
 	//baseURL: process.env.REACT_APP_SERVER_BASE_URL,
-	baseURL: 'https://social-media2-app.onrender.com'
+	baseURL: 'https://social-media-two-app.onrender.com'
 	withCredentials: true 
 })
 
@@ -62,7 +62,7 @@ axiosClient.interceptors.response.use(
 		
 			}
 		}
-		console.log('axios error',error)
+		//console.log('axios error',error)
 	    return Promise.reject(error)
 	
 	}, async(error)=>{
@@ -71,7 +71,7 @@ axiosClient.interceptors.response.use(
 			type: TOAST_FAILURE,
 			message: error.message
 		}))
-		console.log("error here in axios")
+		//console.log("error here in axios")
 		return Promise.reject(error)
 	}
 )

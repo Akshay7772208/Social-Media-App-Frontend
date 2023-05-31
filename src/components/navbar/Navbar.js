@@ -22,7 +22,7 @@ function Navbar() {
          await axiosClient.post('/auth/logout')//await at start
          removeItem(KEY_ACCESS_TOKEN)
          navigate('/login')
-         console.log("logged out bro")
+         //console.log("logged out bro")
          
       }catch(e){
          console.log(e)

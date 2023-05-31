@@ -23,7 +23,7 @@ function CreatePost(){
  		fileReader.onload=()=>{
  		if(fileReader.readyState===fileReader.DONE){
  			setPostImg(fileReader.result)
- 			console.log('img data',fileReader.result)
+ 			//console.log('img data',fileReader.result)
  		}
  	   }
 	 }
@@ -35,7 +35,7 @@ function CreatePost(){
 				caption,
 				postImg
 			})
-			console.log('Post done',result)
+			//console.log('Post done',result)
 			dispatch(getUserProfile({
 				userId: myProfile._id
 			}))

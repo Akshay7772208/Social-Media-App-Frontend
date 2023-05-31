@@ -44,7 +44,7 @@ const feedSlice=createSlice({
 		.addCase(likeAndUnlikePost.fulfilled,(state,action)=>{
 			const post=action.payload
 			const index=state?.feedData?.posts?.findIndex(item=>item._id===post._id)
-			console.log('feed like',post,index)
+			//console.log('feed like',post,index)
 			if(index!=undefined && index!=-1){
 				state.feedData.posts[index]=post
 			}
