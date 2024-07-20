@@ -10,8 +10,9 @@ import {setLoading} from '../redux/slices/appConfigSlice'
 export const axiosClient=axios.create({
 	//baseURL: 'http://localhost:4000',
 	//baseURL: process.env.REACT_APP_SERVER_BASE_URL,
-	baseURL: 'https://social-media-two-app.onrender.com',
-	withCredentials: true 
+	// baseURL: 'https://social-media-two-app.onrender.com',
+	baseURL: 'https://social-media2-backend.onrender.com',
+	//withCredentials: true 
 })
 
 axiosClient.interceptors.request.use(
